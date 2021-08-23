@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cy:open": "CYPRESS_REMOTE_DEBUGGING_PORT=9222 cypress open"
   },
   "repository": {
     "type": "git",
@@ -12,6 +14,12 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "cypress": "^8.3.0"
+  },
+  "devDependencies": {
+    "cypress-metamask": "^1.0.5-development"
+  },
   "bugs": {
     "url": "https://github.com/dawidgil/cypress-metamask-poc/issues"
   },
